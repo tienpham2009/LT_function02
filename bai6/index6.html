@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 6</title>
+</head>
+<body>
+<script>
+    let num = +prompt('nhap so can kiem tra');
+    let flag = true;
+
+    function checkNum() {
+        if (num !== 0) {
+            if (num > 0) {
+                alert(flag);
+            } else if (num < 0) {
+                flag = false;
+                alert(flag);
+            }
+        }
+    }
+    checkNum();
+</script>
+</body>
+</html>

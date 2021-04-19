@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 4</title>
+</head>
+<body>
+<script>
+    let a = prompt('nhap ki tu can kiem tra');
+    let number = '0,1,2,3,4,5,6,7,8,9';
+    let flag = true;
+    function checkNum() {
+        if ( number.indexOf(a) !== -1){
+            flag = true;
+            alert(flag);
+        }else {
+            flag = false;
+            alert(flag);
+        }
+    }
+    checkNum();
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+    let r = +prompt('nhap ban kinh hinh tron');
+    const PI = 3.14159;
+
+    function acreage() {
+        acr = PI * r * r;
+        document.getElementById('demo').innerHTML = `dien tich cua hinh tron co ban kinh ${r} la : ${acr}`;
+    }
+
+    acreage();
+
+    function perimeter() {
+        per = 2 * r * PI;
+        document.getElementById('demo1').innerHTML = `chu vi cua hinh tron co ban kinh ${r} la : ${per}`;
+    }
+    perimeter();
+</script>
+</body>
+</html>

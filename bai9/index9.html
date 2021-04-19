@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 9</title>
+</head>
+<body>
+<script>
+    let arr = ['1', '=', '3', 'r', ';', '4', '1', '3'];
+    let char = prompt('nhap ki tu can kiem tra');
+    let count = 0;
+
+    function checkChar(char) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === char) {
+                count++
+            }
+        }
+    }
+    function checkCount(count) {
+        if (count === 0) {
+            document.write(`ki tu ${char} khong xuat hien trong mang`)
+        } else {
+            document.write(`ki tu ${char} khong xuat hien ${count} lan trong mang`)
+        }
+
+
+    }
+    checkChar(char);
+    checkCount(count);
+
+
+</script>
+</body>
+</html>

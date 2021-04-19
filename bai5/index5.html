@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 5</title>
+</head>
+<body>
+<script>
+    let a = +prompt('nhap so thu nhat');
+    let b = +prompt('nhap so thu hai');
+    let c = +prompt('nhap so thu ba');
+    function minThree(){
+        if (a < b){
+            if (a < c){
+                alert(`${a} la so nho nhat`);
+            }else if ( b < c ){
+                alert(`${b} la so nho nhat`);
+            }else {
+                alert(`${c} la so nho nhat`);
+            }
+        } else if ( b < c){
+            alert(`${b} la so nho nhat`)
+        }else {
+            alert(`${c} la so nho nhat`);
+        }
+    }
+    minThree();
+</script>
+</body>
+</html>
